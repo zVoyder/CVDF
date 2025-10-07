@@ -1,7 +1,7 @@
 % Copyright (c) 2024 Denis Faraci
 
 \documentclass[7pt]{article}
-\usepackage[margin=0.3in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
 \usepackage[colorlinks=true, urlcolor=black]{hyperref}
@@ -19,6 +19,7 @@
     \vspace{0.08em}\par
 }
 \newcommand{\cvsection}[2]{%
+    \vspace{-.6em}
     \section*{{\large\textbf{\MakeUppercase{#1}}}}
     \vspace{-0.5em}
     \sectionline
@@ -37,12 +38,13 @@
 }
 
 \begin{document}
-\pagestyle{empty}
+    \pagestyle{empty}
 
 % Header
     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
         &
         \begin{minipage}{0.22\textwidth}
+            \vspace{-1.2em}
             \raggedright
             {\LARGE\textbf{Denis Faraci}}\\[0.08em]
             {\normalsize\textbf{Gameplay Programmer}}\\[0.08em]
@@ -57,23 +59,23 @@
 
 % Sections
     \cvsection{SUMMARY}{
-        Gameplay Programmer experienced in \textbf{Unreal Engine} and \textbf{Unity}, focused on scalable systems and clean architecture, 
+        Gameplay Programmer experienced in \textbf{Unreal Engine} and \textbf{Unity}, focused on scalable systems and clean architecture,
         developing modular \textbf{frameworks} for  \textbf{published titles} while collaborating with teams, adapting to workflows and working independently with self-motivation and ambition.
     }
 
     \cvsection{SKILLS}{
         \begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=*]
-            \item \textbf{Unreal Engine 5} – 3+ years in gameplay programming and systems architecture with Blueprints and C++. Two games published on \textbf{Steam}, one near release.
+            \item \textbf{Unreal Engine 5} – 3+ years in gameplay programming and systems architecture with \textbf{Blueprints and C++}, creating fully \textbf{data-driven} systems. Two games published on \textbf{Steam}, one near release.
             \item \textbf{Unity} – 5+ years indie experience creating core gameplay systems, including frameworks. Published a game on \textbf{Google Play}.
-            \item \textbf{Unreal C++ / Netcode} – Developed games with custom replication, networking and multiplayer support in Unreal and using \textbf{Mirror} in Unity.
-            \item \textbf{C / C++ / C\# / .NET} – Built multiple desktop applications and a complete console ASCII-Art game.
+            \item \textbf{Netcode} – Implemented multiplayer systems using the \textbf{Replication System in Unreal Engine} and \textbf{Mirror for Unity}, with experience integrating \textbf{Steamworks} and \textbf{Google Play Services} APIs.
+            \item \textbf{C / C++ / C\# / .NET} – Developed performance-oriented desktop and console applications with strong focus on memory management and optimization.
             \item \textbf{UI Programming} – Created modular inventory and node-based dialogue systems in \textbf{UMG}, \textbf{UI Toolkit} and \textbf{IMGUI}.
             \item \textbf{Version Control / Git / GitHub} – Collaborated on multiple repositories, resolving conflicts and managing workflows across teams.
             \item \textbf{Project Management / Jira / HacknPlan} – Coordinated tasks and interdepartmental collaboration, supporting \textbf{agile workflows} and effective communication with the game design department.
             \item \textbf{UML / TDD} – Used UML for documentation and TDD to ensure reliable, maintainable code.
-            \item \textbf{Python} – Used in Unreal for \textbf{automation}, \textbf{database integration} into DataAssets and pre-engine workflows.
-            \item \textbf{CI/CD Pipelines} – Familiar with automated workflows for building, testing and deployment of projects.
-            \item \textbf{HTML / PHP / MySQL / JQuery / Javascript} – Developed websites, including personal portfolio and back-end tools supporting production pipelines.
+            \item \textbf{Python} – Used in Unreal for \textbf{automation}, database integration into DataAssets and pre-engine workflows.
+            \item \textbf{CI/CD Pipelines} – Familiar with \textbf{automated workflows} for building, testing and deployment of projects.
+            \item \textbf{HTML / PHP / MySQL / JQuery / Javascript} – Developed websites, including personal portfolio.
             \item \textbf{Java / Assembly} – Developed applications and contributed to technical projects across paradigms.
             \item \textbf{Microsoft Office} – Documentation, production planning and reporting.
         \end{itemize}
