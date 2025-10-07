@@ -1,0 +1,116 @@
+% Copyright (c) 2024 Denis Faraci
+
+\documentclass[7pt]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[colorlinks=true, urlcolor=black]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\titlespacing*{\section}{0pt}{0.7em}{.5em}
+\newcommand{\sectionline}{\vspace{-0.3em}\noindent\rule{\linewidth}{0.15pt}\vspace{0.08em}}
+\newcommand{\project}[3]{%
+    \noindent
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+    \textbf{#1} & \textit{#2} \\
+    \end{tabular*}
+    \vspace{0.04em}
+    #3
+    \vspace{0.08em}\par
+}
+\newcommand{\cvsection}[2]{%
+    \section*{{\large\textbf{\MakeUppercase{#1}}}}
+    \vspace{-0.5em}
+    \sectionline
+    \vspace{-0.15em}
+    #2
+}
+\newcommand{\footerdescription}[1]{%
+    \begin{center}
+    \vspace{0.1em}
+    \scriptsize
+    \textit{#1}
+    \end{center}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% Header
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+        &
+        \begin{minipage}{0.22\textwidth}
+            \raggedright
+            {\LARGE\textbf{Denis Faraci}}\\[0.08em]
+            {\normalsize\textbf{Gameplay Programmer}}\\[0.08em]
+            {\footnotesize
+            Italy, Milan\\
+            +39 339 1172868\\
+            \href{https://zvoyder.github.io}{zvoyder.github.io}\\
+            }
+        \end{minipage}
+    \end{tabular*}
+
+% Sections
+    \cvsection{SUMMARY}{
+        Gameplay Programmer experienced in \textbf{Unreal Engine} and \textbf{Unity}, focused on scalable systems and clean architecture.
+        Developed modular \textbf{frameworks} for both engines and \textbf{published titles on Steam and Google Play}, ensuring smooth collaboration across departments.
+    }
+    \cvsection{SKILLS}{
+        \begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=*]
+            \item \textbf{Unreal Engine 5} – 3+ years in gameplay programming and systems architecture with Blueprints and C++. Two games published on \textbf{Steam}, one near release.
+            \item \textbf{Unity} – 5+ years indie experience creating core gameplay systems, including frameworks. Published a game on \textbf{Google Play}.
+            \item \textbf{Unreal C++ / Netcode} – Developed games with custom replication and multiplayer support in Unreal and using \textbf{Mirror} in Unity.
+            \item \textbf{C / C++ / C\# / .NET} – Built multiple desktop applications and a complete console ASCII-Art game.
+            \item \textbf{UI Programming} – Created modular inventory and node-based dialogue systems in \textbf{UMG}, \textbf{UI Toolkit}, and \textbf{IMGUI}.
+            \item \textbf{Git / GitHub} – Collaborated on multiple repositories, resolving conflicts and managing workflows across teams.
+            \item \textbf{Project Management / Jira / HacknPlan} – Coordinated tasks and facilitated interdepartmental collaboration.
+            \item \textbf{UML / TDD} – Used UML for documentation and TDD to ensure reliable, maintainable code.
+            \item \textbf{Python} – Used in Unreal for \textbf{automation}, \textbf{database integration} into DataAssets, and pre-engine workflows.
+            \item \textbf{CI/CD Pipelines} – Familiar with automated workflows for building, testing, and deployment of projects.
+            \item \textbf{HTML / PHP / MySQL / JQuery / Javascript} – Developed websites, including personal portfolio, and back-end tools supporting production pipelines.
+            \item \textbf{Java / Assembly} – Developed applications and contributed to technical projects across paradigms.
+            \item \textbf{Microsoft Office} – Documentation, production planning, and reporting.
+        \end{itemize}
+    }
+
+    \cvsection{WORKS}{
+        \project{\href{https://eventhorizonschool.itch.io/the-negative-edge}{The Negative Edge} - \textit{Unreal Engine 5.5}}{Nov 2024 - Current}{
+            Led core gameplay systems, including RPG mechanics, inventory, UI, and Weapon System in Blueprint and C++, collaborating with design and art teams;
+            showcased at Gamescom, nominated at DevGAMM Awards, upcoming on Steam and released on Itch.io.
+        }
+        \project{\href{https://store.steampowered.com/app/4075260/Weabot/}{Weabot} - \textit{Unreal Engine 5.3}}{Jan 2024 - Jul 2024}{
+            Developed modular Checkpoint, Inventory, and Quest systems, plus dynamic Input Glyphs for keyboard/controller, implemented reusable Blueprint and C++ frameworks, contributed to UI, game structure, and quality-of-life features;
+            released on Steam and Itch.io.
+        }
+        \project{\href{https://jacedxxm.itch.io/self}{Self} - \textit{Unreal Engine 5.4}}{Nov 2024 - Dec 2024}{
+            Sole programmer, developed core systems including AI, 3C, UI, and inventory, and built a custom Input Register System to record and replay player actions via a “ghost” character,
+            forming the core horror mechanic; Presented at \textbf{IGDA}, upcoming on Steam and released on Itch.io.
+        }
+        \project{VUEDK Framework - \textit{Unreal Engine 5.5+}}{Jan 2024 - Current}{
+            Developed modular plugins for gameplay, UI, and utility systems, refined with designer feedback for scalability, reusability, and performance;
+            includes documentation and forms the foundation of a personal development framework. Upcoming on \textbf{FAB}.
+        }
+        \project{VUDK Framework - \textit{Unity 2022.3.10f1+}}{Jan 2023 - Current}{
+            Developed a modular framework of independent gameplay, UI, and utility systems, including character controllers, input, checkpoints, saving, crafting, weapons, dialogue, and exploration.
+        }
+    }
+
+    \cvsection{EDUCATION}{
+        \project{Event Horizon School - \textit{Final Grade: 30/30}}{Oct 2022 - Oct 2025}{
+            Completed an intensive Game Programming course, developing skills in gameplay systems, Unreal Engine, and Unity, and collaborating with design, art, and programming teams on real projects.
+        }
+        \project{I.T.I.S. "C. FACCHINETTI" - \textit{Final Grade: 94/100}}{ (self-directed study included) Sep 2015 - Oct 2022}{
+            Completed a technical high school program in computer science and programming, collaborating on team projects.
+            Awarded a post-graduation scholarship recognized in local media.
+        }
+    }
+
+    \cvsection{LANGUAGES}{
+        \textbf{Italian} – Native; \textbf{English} – B2 (Professional working proficiency)
+    }
+
+    \footerdescription{
+        I authorize the processing of my personal data contained in my CV in accordance with Legislative Decree 196/2003 and the GDPR (EU Regulation 2016/679).
+    }
+\end{document}
