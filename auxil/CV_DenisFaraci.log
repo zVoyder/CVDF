@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.6)  13 OCT 2025 12:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.6)  13 OCT 2025 12:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**./main.tex
-(main.tex
+**./CV_DenisFaraci.tex
+(CV_DenisFaraci.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
@@ -272,8 +272,8 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 LaTeX Warning: Unused global option(s):
     [7pt].
 
-(D:/Programs\GitHub\Repos\CVDF\out\main.aux)
-\openout1 = `main.aux'.
+(D:/Programs\GitHub\Repos\CVDF\auxil\CV_DenisFaraci.aux)
+\openout1 = `CV_DenisFaraci.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
@@ -409,14 +409,10 @@ File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 40.
 
-(D:/Programs\GitHub\Repos\CVDF\auxil\main.out)
-(D:/Programs\GitHub\Repos\CVDF\auxil\main.out)
+(D:/Programs\GitHub\Repos\CVDF\auxil\CV_DenisFaraci.out)
+(D:/Programs\GitHub\Repos\CVDF\auxil\CV_DenisFaraci.out)
 \@outlinefile=\write3
-\openout3 = `main.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
+\openout3 = `CV_DenisFaraci.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 44.
@@ -431,21 +427,22 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 44--59
 
 [1
 
-] (D:/Programs\GitHub\Repos\CVDF\out\main.aux)
+] (D:/Programs\GitHub\Repos\CVDF\auxil\CV_DenisFaraci.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
+Package rerunfilecheck Info: File `CV_DenisFaraci.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  11348 strings out of 403246
- 224016 string characters out of 5465128
- 708425 words of memory out of 5000000
+ 224220 string characters out of 5465128
+ 708486 words of memory out of 5000000
  39709 multiletter control sequences out of 15000+600000
  627385 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,8n,93p,343b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,8n,93p,353b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on D:/Programs\GitHub\Repos\CVDF\out\main.pdf (1 page).
+Output written on D:/Programs\GitHub\Repos\CVDF\out\CV_DenisFaraci.pdf (1 page)
+.
