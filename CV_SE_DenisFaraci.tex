@@ -1,0 +1,213 @@
+% Copyright (c) 2024 Denis Faraci
+
+\documentclass[8.5pt]{article}
+
+\usepackage[a4paper, margin=0.55in, headsep=0pt, footskip=0pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Liberation Sans}
+
+\usepackage[
+    colorlinks=true,
+    urlcolor=black
+]{hyperref}
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\pagestyle{empty}
+\flushbottom
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt plus 1pt}
+
+% Section formatting
+\titleformat{\section}
+{\normalsize\bfseries}
+{}
+{0pt}
+{\MakeUppercase}
+
+\titlespacing*{\section}
+{0pt}
+{4pt}
+{2pt}
+
+\newcommand{\sectionline}{
+    \vspace{0pt}
+    \hrule
+    \vspace{2pt}
+}
+
+\newcommand{\cvsection}[1]{
+    \section*{#1}
+    \sectionline
+}
+
+\newcommand{\eduentry}[4]{
+    \noindent
+    \begin{minipage}[t]{0.72\textwidth}
+    \vspace{0pt}
+    \textbf{#1}\\[-1pt]
+    #2
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.25\textwidth}
+    \vspace{0pt}
+    \raggedleft
+    \textit{#3}\\
+    \textbf{Final Grade: #4}
+    \end{minipage}\par
+}
+
+\setlist[itemize]{
+    leftmargin=10pt,
+    nosep,
+    topsep=2pt,
+    itemsep=2pt
+}
+
+\begin{document}
+
+
+% =====================
+% HEADER
+% =====================
+
+    {\Huge\textbf{Denis Faraci}}
+    \\
+    {\textbf{Software Engineer}}
+
+    Milan, Italy \textbar\
+    +39 339 1172868 \textbar\
+    denis.faraci.dev@gmail.com 
+    \newline
+    \href{https://zvoyder.github.io}{zvoyder.github.io}
+    \textbar\
+    \href{https://github.com/zvoyder}{github.com/zvoyder}
+    \textbar\
+    \href{https://www.linkedin.com/in/denis-faraci/}{linkedin.com/in/denis-faraci}
+
+% =====================
+% SUMMARY
+% =====================
+
+    \cvsection{Summary}
+    
+    Software Engineer with experience developing software in C++ and C\#/.NET, designing scalable systems, reusable frameworks and tools.
+    Collaborated with programmers, designers and artists to build and ship commercial software products, including \href{https://store.steampowered.com/curator/46010347}{\textbf{2 games released on Steam}} and various \href{https://zvoyder.itch.io/}{\textbf{projects on Itch.io}}.
+    
+% =====================
+% SKILLS
+% =====================
+
+    \cvsection{Skills}
+
+    \begin{itemize}
+        \item
+        \textbf{Programming Languages}: C, C++ (C++20), C\#, Java, Python and Assembly.
+
+        \item
+        \textbf{Software Engineering}: Object-Oriented Programming (OOP), software design patterns, modular and data-driven design, memory management and performance optimization.
+
+        \item
+        \textbf{Web Development}: HTML5, CSS3, PHP, JavaScript, jQuery, SQL, relational database design.
+
+        \item
+        \textbf{.NET}: Desktop console application development, reusable libraries and tools using the C\#/.NET ecosystem.
+
+        \item
+        \textbf{Unreal Engine 5}: Developed a custom C++ framework with multiple plugins and reusable systems.
+        Worked on multithreaded programming, data-driven architectures and editor tools.
+
+        \item
+        \textbf{Unity}: Developed a custom C\# framework with reusable systems and editor tools,
+        designed to support multiple projects and simplify development workflows.
+
+        \item
+        \textbf{Development Tools}: Git, Git-Flow, GitHub, Python automation, CI/CD pipelines, Jira and HacknPlan.
+
+        \item
+        \textbf{Operating Systems}: Windows, Linux/Unix environments, Command Line (cmd/Bash).
+
+        \item
+        \textbf{Networking \& APIs}: Network replication systems, client-server architectures, Steamworks and Google Play Services integration.
+        
+        \item
+        \textbf{Math \& Physics}: Linear algebra, 3D math, physics-based reasoning.
+    \end{itemize}
+
+% =====================
+% EXPERIENCE
+% =====================
+
+    \cvsection{Experience}
+
+    \textbf{Negative Edge} \textemdash\ Software Engineer - C++ - C\# - Python
+    \hfill
+    \textit{Nov 2024 -- Jul 2026}
+
+    \begin{itemize}
+        \item Designed and implemented core systems including inventory, weapons, RPG mechanics, UI, AI and data management.
+        \item Created VGOAP, a fully data-driven GOAP framework reused across multiple projects to handle AI decision-making.
+        \item Led gameplay architecture decisions, working closely with design, art and audio to solve
+        implementation challenges.
+        \item \textbf{Result:} Showcased at \textbf{Gamescom} and \textbf{DevGAMM}; released on Steam.
+    \end{itemize}
+
+    \vspace{2pt}
+
+    \textbf{Golem Rumble} \textemdash\ Software Engineer - C++ - C\# - Python
+    \hfill
+    \textit{Mar 2026 -- Apr 2026}
+
+    \begin{itemize}
+        \item Developed core gameplay systems including UI, AI, trap mechanics, team management and gameplay flow for a multiplayer PvP project.
+        \item Built a modular Battle Pass plugin with encrypted save data, cosmetic skin management and tutorial progression using a state machine.
+        \item \textbf{Result:} Showcased at \textbf{IGDA}; released on Steam.
+    \end{itemize}
+
+    \vspace{2pt}
+
+    \textbf{Weabot} \textemdash\ Software Engineer - C++ - C\#
+    \hfill
+    \textit{Jan 2024 -- Jul 2024}
+
+    \begin{itemize}
+        \item Designed gameplay architecture and built modular inventory, save system, AI, UI and quest system.
+        \item Delivered reusable gameplay solutions in close collaboration with designers and artists.
+        \item \textbf{Result:} Released on Steam and Itch.io.
+    \end{itemize}
+
+    \vspace{2pt}
+
+% =====================
+% EDUCATION
+% =====================
+
+    \cvsection{Education}
+
+    \eduentry
+    {Event Horizon School}
+    {Software Engineering program (1000+ hours) covering programming fundamentals, computer architecture, memory management, object-oriented programming, software design and development with C\# and C++.}
+    {Oct 2022 -- Oct 2025}
+    {30/30}
+
+    \vspace{2pt}
+
+    \eduentry
+    {I.T.I.S. ``C. Facchinetti''}
+    {Computer Science and Software Engineering program covering programming, web development, databases and software fundamentals. Completed a work-based learning \textbf{experience at a web development company}.}
+    {Sep 2015 -- Oct 2022}
+    {94/100}
+
+    \vspace{2pt}
+
+% =====================
+% LANGUAGES
+% =====================
+    \cvsection{Languages}
+    \textbf{Italian} – Native; \textbf{English} – B2 Professional working proficiency.
+
+    \centerline{
+        \scriptsize
+        I authorize the processing of my personal data contained in my CV in accordance with Legislative Decree 196/2003 and the GDPR (EU Regulation 2016/679).
+    }
+\end{document}
